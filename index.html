@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript">
       var id = window.location.hash.substring(2);
+      var elem = document.createElement("img");
+      elem.setAttribute("src", "https://hwangso.s3.amazonaws.com/timetable/" + id + ".png");
+      elem.setAttribute("width", "100%");
+      document.getElementById("tt").appendChild(elem);
     </script>
   </head>
   <body>
